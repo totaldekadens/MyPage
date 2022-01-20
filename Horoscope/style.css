@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    margin: 0px;
+    background-color:rgb(0, 0, 77)
+}
+
+main, .birth, form, .horoscope, .container, .containerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+main {
+    height: 90vh;
+}
+
+#myVideo{
+    min-width: 100%;
+    min-height: 100%; 
+    object-fit: fill;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left:0;
+    top: 0;
+    z-index: -1;
+}
+
+.birth {
+    height: 100vh; 
+    text-align: center;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+} 
+
+.blur {
+    filter: blur(8px); 
+}
+
+form{
+    text-align: center;
+}
+
+.label{
+    display: block;
+    margin-bottom: 30px;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+select {
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.493);
+    color: rgba(166, 204, 247, 0.781);
+    height: 60px;
+    width: 200px;
+}
+
+select:focus {
+    background: rgba(0, 0, 0, 0.493);
+    color: rgba(166, 204, 247, 0.781);
+}
+
+select option {
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+
+
+
+/* Horoscope */
+
+
+h1, h3, p{
+    color: white;
+}
+
+.horoscope, .birth, .buttons, .btn {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.horoscope {
+    margin-top: 0px;
+}
+
+.container, .containerContent {
+    width: 600px;
+}
+
+.container {
+    margin-top: 100px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.493);
+} 
+
+.imageContainer {
+    max-width: 220px;
+    max-height: 310px;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.starSign {
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.btn  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 45px;
+    width: 220px;
+    font-size: 17px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.493);
+    color: white;
+    transition: transform 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    background: rgba(0, 0, 0, 0.493);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.521);
+}
+
+.btnArrow {
+    position: fixed;
+    left: 20px;
+    top:10px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+
+.container{    
+    width: 420px;
+}
+
+.label {
+    font-size: 30px;
+}
+
+.containerContent{
+    width: 250px;
+}
+
+.btnArrow {
+    left: 20px;
+    bottom:10px;
+    top:unset;
+    width: 50px;
+    height: 50px;
+}
+
+.btn {
+    transition: unset;
+}
+
+.btn:hover {
+    transform: unset;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+.container{    
+    width: 300px;
+    margin-top: 50px;
+}
+
+.label {
+    font-size: 27px;
+}
+
+.imageContainer {
+    width: 140px;
+    }
+
+.birth {
+    height: 90vh; 
+}
+
+.inputs {
+    gap: 10px;
+}
+
+select {
+    width: 150px;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+
+.container{    
+    width: 215px;
+}
+
+.label {
+    font-size: 24px;
+}
+
+.imageContainer {
+    width: 110px;
+    }
+
+h3 {
+    font-size: 15px;
+}   
+
+.btn{
+height: 45px;
+width: 200px;
+font-size: 15px;
+}
+
+.btnArrow {
+    width: 50px;
+    font-size: 28px;
+}
+
+.inputs {
+    flex-direction: column; 
+    gap: 10px;
+}
+
+}    
+
+@media screen and (max-width: 300px) {
+
+.label {
+    font-size: 22px;
+}
+}

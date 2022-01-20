@@ -1,0 +1,130 @@
+
+header {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 10px 10px 10px black;
+    background-image: url("/assets/teamwork2.jpg");
+    z-index: 0;
+}
+
+.top {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+
+}
+
+.top-active {
+    background-color: black;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
+.left {
+    display: flex;
+    margin: 10px;
+    margin-left: 15px;
+    gap: 20px;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin: 5px;
+    margin-right: 20px;
+    width: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.navigation:hover {
+    transform: scale(1.1);
+    color: lightblue;
+}
+
+.myName {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    
+}
+
+.myName img {
+    width: 100%;   
+    height: 100%; 
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.dot:hover {
+    background-color: lightblue;
+}
+
+.phone {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.phone .fas {
+    transition: all 0.2s ease-in;
+    color: rgb(133, 133, 133);
+}
+
+.phone .fas:hover {
+    transform: scale(1.03);
+    color: green;
+}
+
+.profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+}
+    
+@media screen and (max-width: 450px){
+.myName img {
+    width: 100%;
+    height: 100%;
+}
+}
+
+@media screen and (max-width: 320px) {
+.myName {
+    width: 100px;
+    height: auto;
+}
+}
+
+
+@media (max-height: 420px) and (max-width: 920px) {
+header {
+    height: auto;
+}
+
+.top {
+    position: relative;
+}
+}

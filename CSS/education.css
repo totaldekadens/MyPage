@@ -1,0 +1,169 @@
+
+header {
+height: auto;
+}
+
+main {
+    background-image: linear-gradient(rgb(49, 49, 49), white, white, white,white,white,white);
+}
+
+h1 { 
+    margin: 0px;
+}
+
+.welcome {
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: unset;
+    flex-wrap: wrap;
+}
+
+.containerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    height: auto;
+}
+
+.box { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    transition: none;
+    width: 500px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.box img {
+    width: 98%;
+    height: 98%;
+    object-fit: contain;
+
+}
+
+.box:hover {
+transform: none;
+
+}    
+
+.clickImage {
+    top: 70px;
+    width: 70vw;
+    height: auto;
+}
+
+.school {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.school a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.school a:hover {
+color: black;
+}
+
+.phone {
+    pointer-events: none;
+}
+
+.details {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailContent {
+    font-size: 15px;
+    margin: 30px;
+}
+
+
+@media screen and (max-width: 1000px) {
+   
+    .clickImage {
+        margin-top: 70px;
+        width: 90vw;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .box { 
+        height: 450px;
+        width: 400px;
+    }
+    .clickImage {
+        position: absolute;
+        top: 70px;
+        width: 95vw;
+        height: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+    .box { 
+        height: 350px;
+        width: 300px;
+    }
+
+    .clickImage {
+        position: absolute;
+        top: 70px;
+        width: 95vw;
+        height: auto;
+    }
+
+    .school a {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+   
+    .welcome {
+        margin-top: 70px;
+    }
+
+    .box { 
+        height: 280px;
+        width: 250px;
+    }
+
+    .clickImage {
+        position: absolute;
+        top: 70px;
+        width: 95vw;
+        height: auto;
+    }
+
+    .school a {
+        font-size: 22px;
+    }
+
+
+}
+
+
+@media (max-height: 420px) and (max-width: 920px) {
+
+}

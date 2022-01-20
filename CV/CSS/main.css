@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color:rgb(65, 65, 65)
+}
+
+a:link, :visited {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+}
+
+#name {
+    color: rgb(138, 108, 33);
+}
+
+.white {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.scrolldown {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.scrollup {
+    position: fixed;
+    right: 40px;
+    bottom: 21px;  
+}
+
+header {
+    margin:20px;
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.45);
+    justify-content: space-between;
+    color: white;
+} 
+
+.citat {
+    width: 400px;
+    height: 200px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 90px;
+
+}
+
+.profilebar {
+    height: 170px;
+    width: 400px;
+    min-width: 270px;
+    margin-right: 320px;
+    margin-top: 110px;
+    align-items: flex-end;
+} 
+
+.profile {
+    height: 300px;
+    width: 240px;
+    position: absolute;
+    top: 90px;
+    right: 60px;
+    box-shadow: 0px 0px 20px black;
+}
+
+main {
+    justify-content:space-evenly;
+}
+
+.bigbox {
+    height:610px;
+    margin:20px;
+    padding:25px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: rgba(255, 255, 255, 0.616);
+    flex-grow:1;
+    min-width: 240px;
+
+}
+
+.smallbox {
+    width: 400px;
+    background-color: white;
+    margin:20px;
+    margin-top: 80px;
+    padding:25px;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: rgba(255, 255, 255, 0.616);
+    flex-grow:1;
+}
+
+.school {
+    width: 70px;
+}
+
+.projekt {
+    margin: 20px;
+    margin-top: 0px;
+    padding:25px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.containerlogo {
+    width: 100px;
+    height: 35px;
+
+}
+
+footer {
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.45);
+    margin:20px;
+}
+
+.footboxes {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1284px) {
+.smallbox {
+    margin-top: 0px;
+}
+
+.citat {
+    display:none;
+}
+
+}
+
+@media screen and (max-width: 950px) {
+.profile {
+    width: 200px;
+    height: 280px;
+}
+
+.footboxes {
+    width: 100px;
+    height: 100px;
+}
+}
+
+@media screen and (max-width: 750px) {
+
+
+.profilebar {
+    align-items: center;
+    padding-left: 20px;
+    margin-left: 0px;
+}
+ 
+}
+
+@media screen and (max-width: 700px) {
+
+header {
+    flex-direction: column;
+    height: 550px;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 70px;
+    margin-top: 0;
+    
+}
+
+.bigbox, .smallbox, .projekt {
+    margin-top: 0px;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.smallbox {
+    margin-bottom: 0px;
+}
+
+.wide {
+    margin-left:0px;
+    margin-right:0px;
+    width: 100%;
+}
+
+.profilebar {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+
+.profile {
+    position: static;
+    margin-bottom: 10px;
+}
+
+.scrolldown {
+    left: 10px;
+    top:10px;
+}   
+
+.scrollup {
+    right: 30px;
+    bottom: 15px;     
+}
+
+footer {
+    margin-bottom: 0px;
+    height: 160px;
+}
+
+}
+
+@media screen and (max-width: 423px) {
+
+footer {
+    margin-bottom: 0px;
+    height: 280px;
+}
+
+.scrollup {
+    right: 8px;
+}
+
+}
+
+@media screen and (max-width: 325px) {
+
+.profile {
+    width: 140px;
+    height: 180px;
+}
+
+header  {
+    height:440px;
+    padding-bottom: 0px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: 200px;
+}
+
+.profilebar {
+    min-width: 240px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+
+.bigbox { 
+    flex-wrap: wrap;}
+
+
+
+@media screen and (max-width: 292px) {
+
+footer {
+    height: 470px;
+}
+
+
+}
+}

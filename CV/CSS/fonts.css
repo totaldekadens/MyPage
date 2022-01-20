@@ -1,0 +1,65 @@
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgba(150, 133, 93, 0.87);
+}
+
+h1, h2, h3, h4, h5, p {
+    margin:0;
+}
+
+q {
+    font-size: 30px;
+}
+
+li {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 750px) {
+
+h1 {
+    font-size: 35px;
+}
+
+h2{ 
+    font-size: 26px;
+}
+}
+
+@media screen and (max-width: 325px) {
+
+h3 {
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 292px) {
+
+li {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 15px;
+}
+}
